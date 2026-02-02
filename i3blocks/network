@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+# Nerd-Font ikonice
+ICON_WIFI="󰖩"
+ICON_LAN="󰈀"
+ICON_NONE="󰖪"
+
+print_wifi() { printf "%s %s\n" "$ICON_WIFI" "$1"; }
+print_lan()  { printf "%s LAN\n"  "$ICON_LAN";    }
+print_none() { printf "%s N/A\n"  "$ICON_NONE";   }
+
+if command -v nmcli &>/dev/null; then
+  # -- NetworkManager put --
+  # Traži povezan Wi-Fi
+  wifi_line=$(nmcli -t -f TYPE,STATE,CONNECTION dev status | grep '^wifi:connected')
+  if [[ -n $wifi_line ]]; then
+      ssid=${wifi_line##*:}
+      print_wifi "$ssid"; exit 0
+  fi
+  # Traži povezan Ethernet
+  lan_line=$(nmcli -t -f TYPE,STATE dev status | grep '^ethernet:connected')
+  if [[ -n $lan_line ]]; then
+      print_lan; exit 0
+  fi
+  print_none; exit 1
+else
+  # -- Fallback: ip/iw --
+  # Ako postoji povezan Wi-Fi
+  wifi_iface=$(iw dev 2>/dev/null | awk '$1=="Interface"{print $2; exit}')
+  if [[ -n $wifi_iface ]]; then
+      ssid=$(iwgetid -r 2>/dev/null)
+      [[ -n $ssid ]] && print_wifi "$ssid" && exit 0
+  fi
+  # Inače proveri da li default ruta ide preko bar nekog iface-a
+  def_iface=$(ip route 2>/dev/null | awk '/^default/ {print $5; exit}')
+  if [[ -n $def_iface ]]; then
+      print_lan; exit 0
+  fi
+  print_none; exit 1
+fi
+

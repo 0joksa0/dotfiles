@@ -1,0 +1,9 @@
+arduino-ide
+i3-resurrect
+i3lock-color
+neofetch
+networkmanager-dmenu-git
+oh-my-zsh-git
+pdfposter
+postman-bin
+rofi-bluetooth-git

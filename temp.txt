@@ -1,0 +1,448 @@
+.
+├── bin
+│   ├── planer-widget
+│   ├── pomodozig
+│   └── rofi-screenshot
+├── dunst
+│   └── dunstrc
+├── i3
+│   ├── backup
+│   ├── config
+│   └── i3blocks.conf
+├── i3blocks
+│   ├── backlight
+│   ├── battery2
+│   ├── cpu_usage
+│   ├── memory
+│   ├── network
+│   ├── rofi-calendar
+│   ├── scripts
+│   │   ├── afs
+│   │   │   ├── afs
+│   │   │   ├── example.png
+│   │   │   ├── LICENSE.md
+│   │   │   └── README.md
+│   │   ├── airly
+│   │   │   ├── airly.png
+│   │   │   ├── airly.py
+│   │   │   ├── config.yml.example
+│   │   │   └── README.md
+│   │   ├── backlight
+│   │   │   ├── example.png
+│   │   │   ├── LICENSE.md
+│   │   │   └── README.md
+│   │   ├── bandwidth
+│   │   │   ├── bandwidth
+│   │   │   ├── bandwidth.png
+│   │   │   ├── i3blocks.conf
+│   │   │   └── README.md
+│   │   ├── bandwidth2
+│   │   │   ├── bandwidth2.c
+│   │   │   ├── bandwidth2.png
+│   │   │   ├── Makefile
+│   │   │   └── README.md
+│   │   ├── bandwidth3
+│   │   │   ├── bandwidth3
+│   │   │   ├── bandwidth3.png
+│   │   │   ├── i3blocks.conf
+│   │   │   ├── LICENSE
+│   │   │   └── README.md
+│   │   ├── battery
+│   │   │   ├── battery
+│   │   │   ├── battery.png
+│   │   │   ├── i3blocks.conf
+│   │   │   └── README.md
+│   │   ├── battery2
+│   │   │   ├── i3blocks.conf
+│   │   │   ├── images
+│   │   │   │   ├── charging.png
+│   │   │   │   ├── full.png
+│   │   │   │   ├── nobattery.png
+│   │   │   │   ├── unknown.png
+│   │   │   │   └── unplugged.png
+│   │   │   ├── LICENSE
+│   │   │   └── README.md
+│   │   ├── batterybar
+│   │   │   ├── batterybar
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   └── screenshot.png
+│   │   ├── battery-poly
+│   │   │   ├── battery-poly
+│   │   │   ├── battery-poly.png
+│   │   │   ├── LICENSE
+│   │   │   └── README.md
+│   │   ├── brightness
+│   │   │   ├── brightness.png
+│   │   │   ├── LICENSE
+│   │   │   ├── main.c
+│   │   │   ├── Makefile
+│   │   │   └── README.md
+│   │   ├── calendar
+│   │   │   ├── calendar
+│   │   │   ├── README.md
+│   │   │   ├── screenshot1.png
+│   │   │   └── screenshot2.png
+│   │   ├── colorpicker
+│   │   │   ├── colorpicker
+│   │   │   ├── colorpicker.png
+│   │   │   ├── LICENSE.md
+│   │   │   └── README.md
+│   │   ├── cpu_usage
+│   │   │   ├── cpu_usage.png
+│   │   │   ├── i3blocks.conf
+│   │   │   └── README.md
+│   │   ├── cpu_usage2
+│   │   │   ├── cpu_usage2.c
+│   │   │   ├── cpu_usage2.png
+│   │   │   ├── i3blocks.conf
+│   │   │   ├── Makefile
+│   │   │   └── README.md
+│   │   ├── cpu_util_detailed
+│   │   │   ├── cpu_util_detailed
+│   │   │   ├── cpu_util_detailed.png
+│   │   │   ├── i3blocks.conf
+│   │   │   ├── LICENSE
+│   │   │   └── README.md
+│   │   ├── dimmer
+│   │   │   ├── dimmer
+│   │   │   ├── dimmer_off.png
+│   │   │   ├── dimmer_on.png
+│   │   │   ├── LICENSE.md
+│   │   │   └── README.md
+│   │   ├── disk
+│   │   │   ├── disk
+│   │   │   ├── disk.png
+│   │   │   ├── i3blocks.conf
+│   │   │   └── README.md
+│   │   ├── disk-io
+│   │   │   ├── disk-io
+│   │   │   ├── disk-io-1.png
+│   │   │   ├── disk-io-2.png
+│   │   │   ├── LICENSE
+│   │   │   └── README.md
+│   │   ├── disk_usage
+│   │   │   ├── disk_usage
+│   │   │   ├── README.md
+│   │   │   └── screenshot.png
+│   │   ├── docker
+│   │   │   ├── docker
+│   │   │   ├── docker.jpg
+│   │   │   ├── i3blocks.conf
+│   │   │   └── README.md
+│   │   ├── dunst
+│   │   │   ├── dunst
+│   │   │   ├── dunst.gif
+│   │   │   ├── i3blocks.conf
+│   │   │   ├── LICENSE
+│   │   │   └── README.md
+│   │   ├── email
+│   │   │   ├── COPYING
+│   │   │   ├── email
+│   │   │   ├── email.png
+│   │   │   └── README.md
+│   │   ├── essid
+│   │   │   ├── essid
+│   │   │   ├── essid.png
+│   │   │   ├── i3blocks.conf
+│   │   │   ├── LICENSE
+│   │   │   └── README.md
+│   │   ├── eyedropper
+│   │   │   ├── eyedropper
+│   │   │   ├── eyedropper_example1.png
+│   │   │   ├── eyedropper_example2.png
+│   │   │   ├── eyedropper_example3.png
+│   │   │   ├── eyedropper_same_color.png
+│   │   │   ├── eyedropper_sample.png
+│   │   │   ├── eyedropper_startup.png
+│   │   │   ├── i3block.conf
+│   │   │   ├── LICENSE.md
+│   │   │   └── README.md
+│   │   ├── github
+│   │   │   ├── github
+│   │   │   ├── i3blocks.conf
+│   │   │   └── README.md
+│   │   ├── go
+│   │   │   ├── go
+│   │   │   ├── go.png
+│   │   │   ├── i3blocks.conf
+│   │   │   ├── LICENCE.md
+│   │   │   └── README.md
+│   │   ├── gpu-load
+│   │   │   ├── gpu-load
+│   │   │   ├── gpu-load.png
+│   │   │   └── README.md
+│   │   ├── i3-focusedwindow
+│   │   │   ├── i3-focusedwindow
+│   │   │   ├── i3-focusedwindow.png
+│   │   │   └── README.md
+│   │   ├── iface
+│   │   │   ├── i3blocks.conf
+│   │   │   ├── iface
+│   │   │   ├── iface-down.png
+│   │   │   ├── iface-up.png
+│   │   │   └── README.md
+│   │   ├── kbdd_layout
+│   │   │   ├── block.png
+│   │   │   ├── kbdd_layout
+│   │   │   ├── LICENSE.md
+│   │   │   └── README.md
+│   │   ├── keyindicator
+│   │   │   ├── keyindicator
+│   │   │   ├── keyindicator-active-vs-inactive.png
+│   │   │   ├── LICENSE.md
+│   │   │   └── README.md
+│   │   ├── key_layout
+│   │   │   ├── key_layout
+│   │   │   ├── key_layout.png
+│   │   │   ├── key_layout_variant.png
+│   │   │   └── README.md
+│   │   ├── key_light
+│   │   │   ├── i3blocks.conf
+│   │   │   ├── key_light
+│   │   │   ├── key_light.png
+│   │   │   └── README.md
+│   │   ├── kubernetes
+│   │   │   ├── i3blocks.conf
+│   │   │   ├── kubernetes
+│   │   │   ├── kubernetes.png
+│   │   │   └── README.md
+│   │   ├── load_average
+│   │   │   ├── i3blocks.conf
+│   │   │   ├── load_average
+│   │   │   ├── load_average.png
+│   │   │   └── README.md
+│   │   ├── mediaplayer
+│   │   │   ├── mediaplayer
+│   │   │   ├── mediaplayer.png
+│   │   │   └── README.md
+│   │   ├── memory
+│   │   │   ├── i3blocks.conf
+│   │   │   ├── memory.png
+│   │   │   └── README.md
+│   │   ├── memory2
+│   │   │   ├── Makefile
+│   │   │   ├── memory2_2.png
+│   │   │   ├── memory2.c
+│   │   │   ├── memory2.png
+│   │   │   └── README.md
+│   │   ├── metars
+│   │   │   ├── metars
+│   │   │   ├── metars.png
+│   │   │   └── README.md
+│   │   ├── miccontrol
+│   │   │   ├── i3blocks.conf
+│   │   │   ├── miccontrol
+│   │   │   ├── README.md
+│   │   │   ├── screenshot1.png
+│   │   │   └── screenshot2.png
+│   │   ├── monitor_manager
+│   │   │   ├── LICENSE
+│   │   │   ├── monitor_manager
+│   │   │   ├── monitor_manager.png
+│   │   │   ├── monitor_manager.py -> monitor_manager
+│   │   │   └── README.md
+│   │   ├── nm-vpn
+│   │   │   ├── i3blocks.conf
+│   │   │   ├── images
+│   │   │   │   ├── full.png
+│   │   │   │   └── short.png
+│   │   │   ├── LICENCE
+│   │   │   ├── nm-vpn
+│   │   │   └── README.md
+│   │   ├── openvpn
+│   │   │   ├── openvpn
+│   │   │   └── README.md
+│   │   ├── openvpn-systemd
+│   │   │   ├── openvpn-systemd
+│   │   │   ├── openvpn-systemd.png
+│   │   │   └── README.md
+│   │   ├── optimus-manager
+│   │   │   ├── i3blocks.conf
+│   │   │   ├── optimus-manager
+│   │   │   ├── optimus-manager-intel.png
+│   │   │   ├── optimus-manager-nvidia.png
+│   │   │   └── README.md
+│   │   ├── purpleair
+│   │   │   ├── i3blocks.conf
+│   │   │   ├── LICENSE
+│   │   │   ├── purpleair
+│   │   │   ├── purpleair.png
+│   │   │   └── README.md
+│   │   ├── rofi-calendar
+│   │   │   ├── README.md
+│   │   │   ├── screenshot2.png
+│   │   │   └── screenshot.png
+│   │   ├── rofi-wttr
+│   │   │   ├── i3blocks.conf
+│   │   │   ├── LICENSE.md
+│   │   │   ├── README.md
+│   │   │   ├── rofi-wttr
+│   │   │   ├── rofi-wttr-detail.png
+│   │   │   └── rofi-wttr-status-line.png
+│   │   ├── shutdown_menu
+│   │   │   ├── i3blocks.conf
+│   │   │   ├── README.md
+│   │   │   ├── rofi.png
+│   │   │   ├── shutdown_menu
+│   │   │   └── zenity.png
+│   │   ├── speedtest
+│   │   │   ├── i3blocks.conf
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   ├── speedtest
+│   │   │   └── speedtest.png
+│   │   ├── spotifyd_dbus
+│   │   │   ├── example.png
+│   │   │   ├── LICENSE.md
+│   │   │   ├── README.md
+│   │   │   └── spotifyd_dbus
+│   │   ├── ssid
+│   │   │   ├── i3blocks.conf
+│   │   │   ├── README.md
+│   │   │   └── ssid
+│   │   ├── sway-focusedwindow
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   ├── sway-focusedwindow
+│   │   │   └── sway-focusedwindow.png
+│   │   ├── systemctl
+│   │   │   ├── i3blocks.conf
+│   │   │   ├── Readme.md
+│   │   │   └── systemctl.png
+│   │   ├── systemd_unit
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   ├── systemd_unit
+│   │   │   └── systemd_unit.png
+│   │   ├── tahoe-lafs
+│   │   │   ├── i3blocks.conf
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   ├── tahoe-lafs
+│   │   │   └── tahoe-lafs.png
+│   │   ├── taskw
+│   │   │   ├── i3blocks.conf
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   ├── taskw
+│   │   │   └── taskw-screenshot01.png
+│   │   ├── temperature
+│   │   │   ├── README.md
+│   │   │   ├── temperature
+│   │   │   └── temperature.png
+│   │   ├── time
+│   │   │   ├── i3blocks.conf
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   ├── time
+│   │   │   └── time.png
+│   │   ├── toggle
+│   │   │   ├── i3blocks.conf
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   ├── toggle
+│   │   │   ├── toggle_off.png
+│   │   │   └── toggle_on.png
+│   │   ├── usb
+│   │   │   ├── i3blocks.conf
+│   │   │   ├── images
+│   │   │   │   ├── 1.png
+│   │   │   │   ├── 2.png
+│   │   │   │   ├── 3.png
+│   │   │   │   └── 4.png
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   └── usb
+│   │   ├── user
+│   │   │   ├── i3blocks.conf
+│   │   │   ├── README.md
+│   │   │   └── user.png
+│   │   ├── volume
+│   │   │   ├── i3blocks.conf
+│   │   │   ├── README.md
+│   │   │   ├── volume
+│   │   │   └── volume.png
+│   │   ├── volume-pipewire
+│   │   │   ├── i3blocks.conf
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   ├── volume-pipewire
+│   │   │   ├── volume-pipewire-high.png
+│   │   │   ├── volume-pipewire-low.png
+│   │   │   ├── volume-pipewire-med.png
+│   │   │   └── volume-pipewire-mute.png
+│   │   ├── volume-pulseaudio
+│   │   │   ├── i3blocks.conf
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   ├── volume-pulseaudio
+│   │   │   ├── volume-pulseaudio-high.png
+│   │   │   ├── volume-pulseaudio-low.png
+│   │   │   ├── volume-pulseaudio-med.png
+│   │   │   └── volume-pulseaudio-mute.png
+│   │   ├── wifi
+│   │   │   ├── i3blocks.conf
+│   │   │   ├── README.md
+│   │   │   ├── wifi
+│   │   │   └── wifi.png
+│   │   ├── wlan-dbm
+│   │   │   ├── README.md
+│   │   │   ├── wlan-dbm
+│   │   │   └── wlan-dbm.png
+│   │   ├── xkb_layout
+│   │   │   ├── LICENSE
+│   │   │   ├── README.md
+│   │   │   ├── xkb_layout
+│   │   │   └── xkb_layout.png
+│   │   └── ytdl-mpv
+│   │       ├── i3blocks.conf
+│   │       ├── LICENSE
+│   │       ├── README.md
+│   │       ├── ytdl-mpv
+│   │       └── ytdl-mpv.png
+│   ├── systemctl
+│   └── volume
+├── kitty
+│   └── kitty.conf
+├── nvim
+│   ├── init.lua
+│   ├── lazy-lock.json
+│   └── lua
+│       ├── keymaps.lua
+│       ├── plugins
+│       │   ├── cmake-tools.lua
+│       │   ├── completion.lua
+│       │   ├── csvview.lua
+│       │   ├── lsp-config.lua
+│       │   ├── lualine.lua
+│       │   ├── markview.lua
+│       │   ├── neodim.lua
+│       │   ├── neo-tree.lua
+│       │   ├── none-ls.lua
+│       │   ├── telescope.lua
+│       │   ├── toggleterm.lua
+│       │   ├── tokyodark.lua
+│       │   ├── treesitter.lua
+│       │   └── whichKey.lua
+│       └── plugins.lua
+├── picom
+│   └── picom.conf
+├── polybar
+│   ├── colors.ini
+│   ├── config.ini
+│   ├── launch.sh
+│   └── uptime.sh
+├── rofi
+│   ├── bluetoothmenu.rasi
+│   ├── colors.rasi
+│   ├── full_screen.rasi
+│   ├── main.rasi
+│   ├── main_without_icons.rasi
+│   └── networkmenu.rasi
+├── temp.txt
+├── tmux
+│   └── tmux.conf
+└── tmux-sessionizer
+
+87 directories, 359 files

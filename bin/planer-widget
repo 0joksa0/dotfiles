@@ -1,0 +1,8 @@
+#!/bin/bash
+
+firefox \
+  --class PlannerWidget \
+  -P planner \
+  --no-remote \
+  https://planner.cloud.microsoft/webui/mytasks/assignedtome/view/board?tid=4bd7928d-756a-4396-8d8f-803e40dd52db
+

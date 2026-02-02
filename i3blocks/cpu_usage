@@ -1,0 +1,22 @@
+#!/bin/bash
+
+cpu_idle_prev=0
+cpu_total_prev=0
+
+read cpu user nice system idle iowait irq softirq steal guest < /proc/stat
+cpu_idle_now=$idle
+cpu_total_now=$((user + nice + system + idle + iowait + irq + softirq + steal))
+
+# Sleep 1s i čitaj ponovo
+sleep 1
+
+read cpu user nice system idle iowait irq softirq steal guest < /proc/stat
+cpu_idle_next=$idle
+cpu_total_next=$((user + nice + system + idle + iowait + irq + softirq + steal))
+
+cpu_delta=$((cpu_total_next - cpu_total_now))
+idle_delta=$((cpu_idle_next - cpu_idle_now))
+cpu_usage=$(( (100 * (cpu_delta - idle_delta)) / cpu_delta ))
+
+echo "$cpu_usage%"
+
